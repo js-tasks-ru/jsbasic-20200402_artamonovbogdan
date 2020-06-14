@@ -11,7 +11,7 @@ function print(text) {
  */
 function isValid(name) {
   const space = name.match(/\s/g);
-//для git тест
+//для git тест 2
   if (name && !space && name.length >= 4){
     return true;
   }
