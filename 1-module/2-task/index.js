@@ -1,3 +1,12 @@
+function isValid(name) {
+  const space = name.match(/\s/g);
+//для git тест 2
+  if (name && !space && name.length >= 4){
+    return true;
+  }
+  return false;
+}
+
 /**
  * Эту функцию трогать не нужно
  */
@@ -9,14 +18,7 @@ function print(text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid(name) {
-  const space = name.match(/\s/g);
-//для git тест 2
-  if (name && !space && name.length >= 4){
-    return true;
-  }
-  return false;
-}
+
 
 function sayHello() {
   const userName = prompt('Введите ваше имя');
